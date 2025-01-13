@@ -12,7 +12,7 @@ public class FeedbackType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "type_id")
-    private Integer typeId;
+    private Integer feedbackTypeId;
 
     private String name;
     private String description;

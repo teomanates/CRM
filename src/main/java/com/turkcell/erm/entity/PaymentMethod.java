@@ -14,7 +14,7 @@ public class PaymentMethod {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "payment_method_id")
-    private Integer id;
+    private Integer paymentMethodId;
 
     @OneToMany(mappedBy = "paymentMethod")
     private List<Payment> paymentList;

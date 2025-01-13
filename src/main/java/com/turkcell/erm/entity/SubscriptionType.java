@@ -14,7 +14,7 @@ public class SubscriptionType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "type_id")
-    private Integer id;
+    private Integer subscriptionTypeId;
 
     @OneToMany(mappedBy = "subscriptionType")
     private List<Subscription> subscriptionList;

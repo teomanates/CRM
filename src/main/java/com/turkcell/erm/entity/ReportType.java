@@ -14,7 +14,7 @@ public class ReportType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "type_id")
-    private Integer id;
+    private Integer reportTypeId;
 
     @OneToMany(mappedBy = "reportType")
     private List<Report> reportList;

@@ -16,7 +16,7 @@ public class SystemUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
-    private Integer id;
+    private Integer userId;
 
     @OneToMany(mappedBy = "systemUser")
     private List<SupportRequest> supportRequestsList;

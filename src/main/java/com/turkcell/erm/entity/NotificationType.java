@@ -14,7 +14,7 @@ public class NotificationType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "type_id")
-    private Integer typeId;
+    private Integer notificationTypeId;
 
     @OneToMany(mappedBy = "notificationType")
     private List<Notification> notificationList;

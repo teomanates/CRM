@@ -14,7 +14,7 @@ public class SupportStatus {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "status_id")
-    private Integer id;
+    private Integer statusId;
 
     @OneToMany(mappedBy = "supportStatus")
     private List<SupportRequest> supportRequestList;

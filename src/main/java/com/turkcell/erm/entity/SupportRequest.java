@@ -12,7 +12,7 @@ public class SupportRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "support_id")
-    private Integer id;
+    private Integer supportId;
 
     @ManyToOne
     @JoinColumn(name = "customer_id")

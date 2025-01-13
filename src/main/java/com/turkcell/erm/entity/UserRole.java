@@ -14,7 +14,7 @@ public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "role_id")
-    private Integer id;
+    private Integer roleId;
 
     @OneToMany(mappedBy = "userRole")
     private List<SystemUser> userRoleList;

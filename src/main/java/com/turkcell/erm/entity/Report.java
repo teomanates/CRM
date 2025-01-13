@@ -12,7 +12,7 @@ public class Report {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "report_id")
-    private Integer id;
+    private Integer reportId;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
